@@ -1,6 +1,15 @@
 .footer {
   background-color: #fff5f6;
   padding-bottom: 20px;
+  // position: relative;
+}
+
+.footer::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #e1e1e1;
+  position: absolute;
 }
 
 .footer__text {
@@ -93,4 +102,5 @@
 
   width: 150px;
   margin: 0 auto;
+  position: relative;
 }
