@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about">
   <div class="about__bg">
     <div class="container">
       <p class="about__title-toptext">tradition and love</p>
@@ -6,18 +6,10 @@
       <div class="about__picture">
         <picture>
           <source
-            srcset="/image/cow.png 1x, /image/cow-2x.png 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="/image/cow-tab.png 1x, /image/cow-tab-2x.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="/image/cow-mob.png 1x, /image/cow-mob-2x.png 2x"
+            srcset="../images/cow-mob.png 1x, ../images/cow-mob-2x.png 2x"
             media="(min-width: 320px)"
           />
-          <img src="/image/cow.png" alt="cow with milk" />
+          <img src="../images/cow.png" alt="cow with milk" />
         </picture>
       </div>
       <p class="about__top-text">
@@ -37,8 +29,8 @@
 
       <button type="button" class="about__btn">
         Read more
-        <svg class="about__icon" width="4.43" height="8">
-          <use href="/image/symbol-defs.svg#about-icon"></use>
+        <svg class="about__icon">
+          <use href="../images/symbol-defs.svg#about-icon"></use>
         </svg>
       </button>
     </div>
