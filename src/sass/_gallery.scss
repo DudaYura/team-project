@@ -14,8 +14,6 @@
   grid-template-rows: repeat(9, 1fr);
   grid-gap: 2px;
 }
-.list {
-}
 .gallery__item:hover {
   transform: rotateY(360deg) scale(1.5);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
