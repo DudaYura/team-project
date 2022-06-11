@@ -1,1 +1,205 @@
+<main class="hero-section" id="hero-header">
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-close-btn js-close-menu" type="button">
+      <svg class="menu-close-btn__icon" width="14" height="14">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
 
+    <button class="menu-buy-btn" type="button" data-modal-open>
+      Buy now<svg class="menu-buy-btn__icon" width="5" height="8">
+        <use href="./images/icons.svg#btn-arrow"></use>
+      </svg>
+    </button>
+
+    <nav class="menu-nav">
+      <ul class="menu-nav__list list">
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="#hero-header">Home</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="#advantages">About us</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="#about">How it’s made?</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="#products">Our products</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="hero-section__container container">
+    <div class="header-container container">
+      <a class="logo link" href="index.html"
+        ><img
+          class="logo__icon"
+          src="./images/icecream-logo.png"
+          alt="icecream store logo"
+        />
+        <span>icecream</span></a
+      >
+
+      <nav class="main-nav">
+        <ul class="main-nav__list list">
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#hero-header">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#advantages">About us</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#about">How it’s made?</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#products">Our products</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-btn-container">
+        <button
+          class="menu-open-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-open-btn__icon" width="20" height="20">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+
+        <button class="header-buy-btn" type="button" data-modal-open>
+          Buy now<svg class="header-buy-btn__icon" width="5" height="8">
+            <use href="./images/icons.svg#btn-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <h1 class="hero-section__slogan">
+      ice cream<br />made with<br /><span class="hero-section__slogan--accent"
+        >passion</span
+      >
+    </h1>
+
+    <ul class="hero-nav list">
+      <li class="hero-nav__item">
+        <a class="hero-nav__link hero-nav__link--accent link" href="#products"
+          >Products</a
+        >
+      </li>
+      <li class="hero-nav__item">
+        <a class="hero-nav__link link" href="#about">How it’s made?</a>
+      </li>
+    </ul>
+
+    <div class="features-wrap">
+      <div class="milk-img">
+        <picture class="milk-img__image">
+          <source
+            srcset="
+              ./images/hero-milk-tablet-152.png 1x,
+              ./images/hero-milk-tablet-304.png 2x
+            "
+            media="(max-width: 1279px)"
+          />
+          <source
+            srcset="
+              ./images/hero-milk-desktop-213.png 1x,
+              ./images/hero-milk-desktop-426.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img src="./images/hero-milk-desktop-213.png" alt="milk jar" />
+        </picture>
+        <div class="milk-img__circle"></div>
+      </div>
+
+      <div class="features">
+        <p class="features__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button type="button" class="features__button">
+          <svg class="features__btn-icon">
+            <use href="./images/icons.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <ul class="stores list">
+      <li class="stores__item">
+        <p class="stores__text">
+          <span class="stores__text--accent">16 </span>cafes
+        </p>
+      </li>
+      <li class="stores__item">
+        <p class="stores__text">
+          <span class="stores__text--accent">23 </span>food trucks
+        </p>
+      </li>
+    </ul>
+
+    <div class="tasty-img">
+      <picture class="tasty-img__image">
+        <source
+          srcset="
+            ./images/hero-tasty-tablet-190.png 1x,
+            ./images/hero-tasty-tablet-380.png 2x
+          "
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/hero-tasty-desktop-304.png 1x,
+            ./images/hero-tasty-desktop-608.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <img
+          src="./images/hero-tasty-desktop-304.png"
+          alt="girl eating ice cream"
+        />
+      </picture>
+      <p class="tasty-img__text">soooooo tasty!</p>
+      <div class="tasty-img__circle"></div>
+    </div>
+
+    <div class="hero-icecream">
+      <picture class="hero-icecream__image">
+        <source
+          srcset="
+            ./images/hero-icecream-mobile-171.png 1x,
+            ./images/hero-icecream-mobile-342.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/hero-icecream-tablet-143.png 1x,
+            ./images/hero-icecream-tablet-286.png 2x
+          "
+          media="(min-width: 768px) and (max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/hero-icecream-desktop-236.png 1x,
+            ./images/hero-icecream-desktop-472.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <img src="./images/hero-icecream-desktop-236.png" alt="icecream cone" />
+      </picture>
+      <div class="hero-icecream__circle"></div>
+    </div>
+  </div>
+</main>
