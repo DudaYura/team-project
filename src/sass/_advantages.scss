@@ -8,29 +8,53 @@
 }
 
 .advan-list {
-  justify-content: start;
-
   @media screen and (min-width: 480px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
   }
 
-  /* @media screen and (min-width: 1280px) {
-    width: ;
-  } */
-}
+  @media screen and (min-width: 768px) {
+    max-width: 527px;
+  }
 
-.advan-list_element:not(:last-child) {
-  margin-bottom: 32px;
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 139px;
+
+    max-width: 1140px;
+  }
 }
 
 .advan-list_element {
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
-}
 
-.advan-list_text {
-  max-width: 230px;
+  @media screen and (max-width: 479.98px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+      max-width: 230px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 174%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
 }
 
 .advan-list_meaning {
@@ -46,6 +70,16 @@
   display: block;
   margin-top: 16px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+  }
 }
 
 /* PNG изображения секций */
