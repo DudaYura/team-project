@@ -46,13 +46,13 @@
   @media screen and (max-width: 767px) {
     background-position: left 77%, right 77%;
     background-size: 133px;
-    background-image: url(../image/bg-milk-left-mob.png),
-      url(../image/bg-milk-right-mob.png);
+    background-image: url(./images/bg-milk-left-mob.png),
+      url(./images/bg-milk-right-mob.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../image/bg-milk-left-mob-2x.png),
-        url(../image/bg-milk-right-mob-2x.png);
+      background-image: url(./images/bg-milk-left-mob-2x.png),
+        url(./images/bg-milk-right-mob-2x.png);
     }
   }
 }
