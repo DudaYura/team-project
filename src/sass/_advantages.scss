@@ -35,9 +35,9 @@
   line-height: 170%;
 
   @media screen and (max-width: 479.98px) {
+    max-width: 230px;
     &:not(:last-child) {
       margin-bottom: 32px;
-      max-width: 230px;
     }
   }
 
