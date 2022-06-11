@@ -1,27 +1,21 @@
-// h1,
-// h2,
-// h3,
-// p,
-// button {
-//   margin: 0;
-//   padding: 0;
-// }
+.btn-hover {
+  transition: background-color var(--time-transition);
 
-// .container {
-//   margin: 0 auto;
-//   padding: 0 20px;
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button);
+  }
+}
 
-//   @media screen and (min-width: 480px) {
-//     width: 480px;
-//   }
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     width: 1280px;
-//     padding: 0 16px;
-//   }
-// }
+.nav-hover {
+  color: #fff;
+  transition: color var(--time-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+  }
+}
 
 // ========== mobile menu ===============
 
@@ -79,7 +73,6 @@
 
 .menu-nav__item {
   border-bottom: 1px solid #e18298;
-  color: #fff;
 
   &:first-child {
     border-top: 1px solid #e18298;
@@ -151,7 +144,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: #ffffff;
 
   &:first-child {
     color: var(--primary-color);
