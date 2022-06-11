@@ -333,7 +333,7 @@
 .milk-img__image {
   position: relative;
   z-index: 1;
-  width: auto;
+  max-width: 100%;
 }
 
 .milk-img__circle {
@@ -418,7 +418,7 @@
 .tasty-img__image {
   position: relative;
   z-index: 1;
-  width: auto;
+  max-width: 100%;
 }
 
 .tasty-img__text {
@@ -543,7 +543,7 @@
 .hero-icecream__image {
   position: relative;
   z-index: 1;
-  width: auto;
+  max-width: 100%;
 }
 
 .hero-icecream__circle {
