@@ -5,10 +5,12 @@
 
   const openFranchiseModal = () => {
     franchiseModal.classList.remove('is-hidden');
+    bodyScrollLock['disableBodyScroll'](document.body);
   };
 
   const closeFranchiseModal = () => {
     franchiseModal.classList.add('is-hidden');
+    bodyScrollLock['enableBodyScroll'](document.body);
   };
 
   openFranchiseModalBtn.addEventListener('click', openFranchiseModal);
