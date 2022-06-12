@@ -37,3 +37,4 @@
     aboutmodal: document.querySelector('[about-modal]'),
   };
 })();
+
