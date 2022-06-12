@@ -3,11 +3,11 @@
   background-image: linear-gradient(to bottom, #ffffff 22%, #fff5f6 22%);
   @media screen and (min-width: 768px) {
     padding-bottom: 40px;
-    // background-image: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
+    background-image: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 120px;
-    // background-image: linear-gradient(to bottom, #ffffff 15%, #fff5f6 15%);
+    background-image: linear-gradient(to bottom, #ffffff 15%, #fff5f6 15%);
   }
 }
 
@@ -31,13 +31,9 @@
   @media screen and (min-width: 768px) {
     width: calc(100% / 3 - 32px * 2);
     margin-left: 32px;
-
-    height: 528px;
   }
   @media screen and (min-width: 1280px) {
     padding: 40px;
-
-    height: 538px;
   }
 }
 
@@ -58,7 +54,7 @@
   background: #f0d1a5;
   border-radius: 4px;
   width: 80px;
-  height: 16px;
+  // height: 16px;
   margin-bottom: 20px;
   display: flex;
     align-items: center;
