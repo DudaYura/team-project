@@ -2,7 +2,7 @@
   background-color: #fff5f6;
   padding-bottom: 80px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     padding-bottom: 120px;
   }
 }
@@ -19,7 +19,7 @@
     max-width: 527px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -50,7 +50,7 @@
     line-height: 174%;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 176%;
     letter-spacing: 0.02em;
@@ -76,7 +76,7 @@
     line-height: 1.14;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 58px;
     line-height: 1.13;
   }
