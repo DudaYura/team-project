@@ -1,7 +1,6 @@
 .products {
   padding-top: 80px;
   padding-bottom: 40px;
-
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-top: 40px;
@@ -44,12 +43,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primary-color);
-
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.15;
   }
-
   @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
@@ -74,7 +71,6 @@
   position: relative;
   margin-top: 140px;
   background-size: 100%;
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 32px) / 3);
     margin-left: 16px;
@@ -88,6 +84,7 @@
 
   &.item-first::before {
     content: ' ';
+    z-index: 4;
     position: absolute;
     transform: translateY(-50%);
     width: 280px;
@@ -125,37 +122,33 @@
   }
   &.item-second:before {
     content: ' ';
+    z-index: 4;
     position: absolute;
     transform: translateY(-50%);
     width: 280px;
     height: 280px;
     background-size: 100%;
     background-image: url('../images/home-pic2.png');
-
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/home-pic2@2x.png');
     }
-
     @media screen and (min-width: 768px) {
       width: 224px;
       height: 224px;
       background-image: url('../images/home-2tab.png');
-
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url('../images/home-2tab2@2x.png');
       }
     }
-
     @media screen and (min-width: 1280px) {
       transform: translateY(-65%);
       width: 394px;
       height: 394px;
       background-image: url('../images/home-2desk.png');
-
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -165,31 +158,28 @@
   }
   &.item-third:before {
     content: ' ';
+    z-index: 4;
     position: absolute;
     transform: translateY(-50%);
     width: 280px;
     height: 280px;
     background-size: 100%;
     background-image: url('../images/home-pic3.png');
-
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/home-pic3@2x.png');
     }
-
     @media screen and (min-width: 768px) {
       width: 224px;
       height: 224px;
       background-image: url('../images/home-3tab.png');
-
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url('../images/home-3tab@2x.png');
       }
     }
-
     @media screen and (min-width: 1280px) {
       transform: translateY(-65%);
       width: 394px;
@@ -247,7 +237,6 @@
   @media screen and (min-width: 768px) {
     padding-top: 118px;
   }
-
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 34px;
@@ -299,7 +288,6 @@
   }
 }
 
-// MODAL
 .button-wrap {
   display: flex;
   justify-content: center;
@@ -329,75 +317,56 @@
   fill: var(--primary-color);
 }
 
-.backdrop {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 400ms, visibility 400ms;
+.products-list__container {
+  position: relative;
+  overflow: hidden;
 }
 
-.backdrop.is-hidden .modal {
-  transform: scale(0.1) rotate(180deg);
-}
-
-.modal {
-  background-color: #ffb8ca;
+.overlay {
+  z-index: 5;
+  top: 19%;
+  left: 10%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: transform 250ms;
-  transform: translate(-50%, -50%) scale(1) rotate(0deg);
-}
-
-.close-btn {
-  padding: 0;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  @media screen and (min-width: 320px) and (max-width: 350px) {
-    top: 10px;
-    right: 15px;
+  width: 80%;
+  opacity: 0;
+  transform: translateY(-100%);
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    top: 25%;
   }
-  background-color: var(--color-light);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    top: 17%;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 13%;
+  }
 }
 
-.close-btn__icon {
-  display: flex;
-  align-items: center;
-
-  fill: var(--primary-color);
-  transition: fill var(--time-transition);
+.products-list__container:hover .overlay {
+  transform: translateX(0);
+  opacity: 1;
+  transition: var(--time-transition);
+  background-color: #f9eeef;
 }
 
-.close-btn:hover,
-.close-btn:hover {
-  background-color: #ffffff;
-  transition: background-color var(--time-transition);
-}
-
-.modal__wrap {
-  padding: 40px 15px;
+.overlay {
+  padding: 45px 15px;
 }
 
 .modal__title {
   font-family: 'Titan One';
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-color);
+
   margin-bottom: 20px;
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
 }
 
 .modal__content {
@@ -405,16 +374,9 @@
   font-size: 12px;
   line-height: 1.62;
   color: #907e82;
-
-  @media screen and (min-width: 768px) {
-    font-weight: 900;
-    line-height: 1.5;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
   }
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
 
