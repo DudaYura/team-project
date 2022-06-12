@@ -30,4 +30,10 @@
   openModalMenuBtn.addEventListener('click', openModalfromMenu);
   openModalHeaderBtn.addEventListener('click', openModal);
   closeModalBtn.addEventListener('click', closeModal);
+
+  const refs = {
+    openAboutBtn: document.querySelector('[about-modal-open]'),
+    closeAboutBtn: document.querySelector('[about-modal-close]'),
+    aboutmodal: document.querySelector('[about-modal]'),
+  };
 })();
