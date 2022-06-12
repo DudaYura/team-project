@@ -15,6 +15,7 @@
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     margin-bottom: 40px;
     margin-left: -32px;
   }
@@ -57,8 +58,8 @@
   // height: 16px;
   margin-bottom: 20px;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     width: 73px;
     font-size: 16px;
@@ -76,10 +77,10 @@
 }
 
 .contacts__adres-wrap {
-  @media  screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     height: 103px;
   }
-   @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     height: 88px;
   }
 }
@@ -125,10 +126,10 @@
 }
 
 .contacts__schedule-wrap {
-  @media  screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     height: 109px;
   }
-   @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     height: 132px;
   }
 }
