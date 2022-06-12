@@ -102,7 +102,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     padding: 32px 32px 0;
     align-items: flex-start;
   }
@@ -132,7 +132,7 @@
 .main-nav {
   position: relative;
   z-index: 1;
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1279.98px) {
     display: none;
   }
 }
@@ -162,6 +162,7 @@
 
 .header-btn-container {
   display: flex;
+  align-items: center;
 }
 
 .menu-open-btn {
@@ -214,7 +215,7 @@
   padding-top: 194px;
   padding-bottom: 158px;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     padding: 102px 32px 190px;
   }
 
