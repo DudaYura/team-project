@@ -8,10 +8,12 @@
 
   const openModal = () => {
     modal.classList.remove('is-hidden');
+    bodyScrollLock['disableBodyScroll'](document.body);
   };
 
   const closeModal = () => {
     modal.classList.add('is-hidden');
+    bodyScrollLock['enableBodyScroll'](document.body);
   };
 
   const openModalfromMenu = () => {
@@ -20,21 +22,9 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.remove('is-open');
     modal.classList.remove('is-hidden');
-
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
   };
 
   openModalMenuBtn.addEventListener('click', openModalfromMenu);
   openModalHeaderBtn.addEventListener('click', openModal);
   closeModalBtn.addEventListener('click', closeModal);
-
-  const refs = {
-    openAboutBtn: document.querySelector('[about-modal-open]'),
-    closeAboutBtn: document.querySelector('[about-modal-close]'),
-    aboutmodal: document.querySelector('[about-modal]'),
-  };
 })();
-
