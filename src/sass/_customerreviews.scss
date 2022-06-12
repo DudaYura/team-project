@@ -28,10 +28,10 @@
 //   /*padding-top: 120px;*/
 //   width: auto;
 //   margin: 0 auto;
+//   margin-bottom: 32px;
 //   height: auto;
 //   object-fit: cover;
 //   @media screen and (min-width: 320px) {
-//     padding-top: 80px;
 //     height: auto;
 //     object-fit: cover;
 //   }
@@ -44,15 +44,16 @@
 //   width: 12px;
 //   height: 9.82px;
 // }
-// .customer-reviewes .container {
-//   @media screen and (min-width: 320px) {
-//     max-width: 320px;
-//   }
-// }
+// /*.customer-reviewes .container{
+//     @media screen and (min-width:320px) {
+//         max-width: 320px;
+
+//         }
+//     }*/
 
 // .customer-reviewes {
-//   //   margin-left: 123px;
-//   //   margin-right: 123px;
+//   margin-left: 123px;
+//   margin-right: 123px;
 //   @media screen and (min-width: 320px) {
 //     margin-left: 20px;
 //     margin-right: 20px;
@@ -61,10 +62,11 @@
 // .cusomer_text-box {
 //   /*width: 100%;
 //     height: 138px;*/
-//   background-color: #fafafa;
+
 //   @media screen and (min-width: 320px) {
-//     width: 280px;
-//     height: 308px;
+//     max-width: 157px;
+//     margin-left: 65px;
+//     /*align-items: center;*/
 //   }
 // }
 
@@ -72,9 +74,11 @@
 //   /*max-width: 750px;
 // padding-top: 47px;
 // padding-bottom: 39px;*/
+//   background-color: #fafafa;
+
 //   @media screen and (min-width: 320px) {
-//     max-width: 157px;
-//     margin: 43px 58px 26px 65px;
+//     /*width: 280px;*/
+//     height: 308px;
 //   }
 // }
 
@@ -82,7 +86,7 @@
 //   content: '';
 //   /*margin-left: 105px;*/
 //   margin-top: 30px;
-//   margin-right: -12px;
+//   margin-right: -15px;
 //   display: inline-block;
 //   background-size: contain;
 //   background-repeat: no-repeat;
@@ -100,21 +104,13 @@
 //  border: 1px solid #E1E1E1;
 // }*/
 // .customer__top-text {
-//   font-family: DM Sans, sans-serif;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.9;
-//   text-align: center;
-//   letter-spacing: 4%;
-//   z-index: 1;
-
-//   background-image: repeating-linear-gradient(
-//     180deg,
-//     transparent,
-//     transparent 24px,
-//     #e1e1e1 25px
-//   );
+//   /* font-family: DM Sans, sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.9;
+//     text-align: center;
+//     letter-spacing: 4%;*/
 
 //   @media screen and (min-width: 320px) {
 //     font-family: DM Sans, sans-serif;
@@ -129,14 +125,24 @@
 // .customer_city {
 //   margin-bottom: 32px;
 
-//   font-family: 'DM Sans';
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: 37px;
-//   text-align: center;
+//   /*font-family: 'DM Sans';
+//         font-style: normal;
+//         font-weight: 500;
+//         font-size: 20px;
+//         line-height: 37px;
+//         text-align: center;
 
-//   color: #000000;
+//         color: #000000;*/
+//   @media screen and (min-width: 320px) {
+//     font-family: 'DM Sans';
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.8;
+//     text-align: center;
+
+//     color: #000000;
+//   }
 // }
 // .customer_city::before {
 //   content: '. . .';
