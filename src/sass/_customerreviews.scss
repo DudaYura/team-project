@@ -71,18 +71,36 @@
     #e1e1e1 30px
   );
   @media screen and (min-width: 768px) {
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 24px,
+      #e1e1e1 26px
+    );
     padding: 0 40px;
   }
   @media screen and (min-width: 1200px) {
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 27px,
+      #e1e1e1 29px
+    );
     padding: 0px 20px;
   }
 }
-
+.customer_city-text {
+  display: block;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+}
 .customer__top-text::before {
   content: '';
   position: absolute;
   top: -14px;
-  left: -27px;
+  left: -21px;
   z-index: -1;
   display: inline-block;
   background-size: contain;
@@ -91,12 +109,12 @@
   height: 40px;
   background-image: url(../images/lap.png);
   @media screen and (min-width: 768px) {
-    top: -16px;
-    left: 8px;
+    top: -20px;
+    left: 32px;
   }
   @media screen and (min-width: 1200px) {
-    top: -15;
-    left: 15px;
+    top: -15px;
+    left: 28px;
   }
 }
 .customer__top-text {
