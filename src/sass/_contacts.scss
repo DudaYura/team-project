@@ -55,7 +55,6 @@
   background: #f0d1a5;
   border-radius: 4px;
   width: 80px;
-  // height: 16px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -73,15 +72,6 @@
   width: 130px;
   @media screen and (min-width: 768px) {
     width: 138px;
-  }
-}
-
-.contacts__adres-wrap {
-  @media screen and (min-width: 768px) {
-    height: 103px;
-  }
-  @media screen and (min-width: 1280px) {
-    height: 88px;
   }
 }
 
@@ -110,13 +100,10 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
-  border-bottom: 1px solid #e1e1e1;
   padding-bottom: 24px;
-  margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.64;
-    margin-bottom: 32px;
     padding-bottom: 32px;
   }
   @media screen and (min-width: 1280px) {
@@ -125,19 +112,10 @@
   }
 }
 
-.contacts__schedule-wrap {
-  @media screen and (min-width: 768px) {
-    height: 109px;
-  }
-  @media screen and (min-width: 1280px) {
-    height: 132px;
-  }
-}
-
 .work-schedule {
   border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
   padding-bottom: 24px;
-  margin-bottom: 24px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -145,7 +123,6 @@
     font-size: 14px;
     line-height: 1.85;
     padding-bottom: 32px;
-    margin-bottom: 32px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
@@ -166,6 +143,13 @@
 
 .work-schedule__time {
   color: #ffa5ba;
+}
+
+.connect {
+  padding-top: 24px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
 }
 
 .connect__tel,
@@ -195,6 +179,9 @@
   .cnt-btn {
     display: flex;
     justify-content: center;
+  }
+  .cnt-btn__item:last-child {
+  margin-left: 15px;
   }
 }
 
@@ -235,9 +222,6 @@
   &:focus {
     background: #ecebeb;
     color: #d41443;
-  }
-  @media screen and (min-width: 768px) {
-    margin-left: 15px;
   }
 }
 
