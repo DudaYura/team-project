@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".cnt-btn__fr"),o=document.querySelector(".modal-close-btn-fr"),c=document.querySelector("[data-modal-fr]");e.addEventListener("click",(function(){c.classList.remove("is-hidden"),bodyScrollLock.disableBodyScroll(document.body)})),o.addEventListener("click",(function(){c.classList.add("is-hidden"),bodyScrollLock.enableBodyScroll(document.body)}))}();
-//# sourceMappingURL=index.67a0ef59.js.map
