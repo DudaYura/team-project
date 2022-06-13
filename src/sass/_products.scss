@@ -54,7 +54,6 @@
 }
 
 .products-list {
-  margin-bottom: -140px;
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: -16px;
@@ -65,7 +64,11 @@
 }
 
 .products-list__item {
-  margin-bottom: 140px;
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 140px;
+    }
+  }
   display: flex;
   justify-content: center;
   position: relative;
@@ -314,7 +317,7 @@
     top: 13%;
   }
 }
-.products-list__container:focus .overlay {
+.products-list__container:hover .overlay {
   transform: translateX(0);
   opacity: 1;
   transition: var(--time-transition);
@@ -322,6 +325,7 @@
 }
 .overlay {
   padding: 45px 15px;
+  border-radius: 24px;
 }
 .overlay__title {
   font-family: 'Titan One';
