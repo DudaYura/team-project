@@ -1,10 +1,12 @@
 .customer {
   padding-bottom: 48px;
 }
+
 .swiper {
   width: 100%;
   height: 100%;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -23,6 +25,7 @@
   -webkit-align-items: center;
   align-items: center;
 }
+
 .swiper-slide img {
   width: auto;
   margin: 0 auto;
@@ -30,6 +33,7 @@
   height: auto;
   object-fit: cover;
 }
+
 .swiper-pagination-bullet-active {
   background-image: url(../images/home1.jpg);
   background-size: cover;
@@ -37,15 +41,48 @@
   width: 12px;
   height: 9.82px;
 }
+
 .customer__text {
   background-color: #fafafa;
   padding: 43px 50px 26px 50px;
+  /*@media screen and (min-width: 320px) {
+            width: 280px;
+            height: 308px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 620px;
+            height: 164px;
+        }*/
+
+  @media screen and (min-width: 1200px) {
+    width: 1034px;
+  }
 }
+
+.customer__text-box {
+  background-color: #fafafa;
+  padding: 43px 50px 26px 50px;
+  padding: 0 20px;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 29px,
+    #e1e1e1 30px
+  );
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0px 20px;
+  }
+}
+
 .customer__top-text::before {
   content: '';
   position: absolute;
-  top: -16;
-  left: -10;
+  top: -14px;
+  left: -27px;
   z-index: -1;
   display: inline-block;
   background-size: contain;
@@ -53,34 +90,90 @@
   width: 54px;
   height: 40px;
   background-image: url(../images/lap.png);
-}
-.cusomer_text-box {
-  padding: 0 10px;
-  background-image: repeating-linear-gradient(
-    180deg,
-    transparent,
-    transparent 29px,
-    #e1e1e1 30px
-  );
+  @media screen and (min-width: 768px) {
+    top: -16px;
+    left: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -15;
+    left: 15px;
+  }
 }
 .customer__top-text {
   position: relative;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 30px;
-  text-align: center;
   z-index: 2;
+
+  @media screen and (max-width: 480px) {
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    max-width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 4%;
+    max-width: 514px;
+    padding-left: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.04em;
+    max-width: 751px;
+  }
 }
+
 .customer_city {
   display: block;
   margin-bottom: 32px;
+
+  @media screen and (min-width: 320px) {
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+
+    color: #000000;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.85;
+    text-align: center;
+    color: #000000;
+  }
 }
+
 .customer_city::before {
   content: '';
-  display: inline-block;
+  background-image: url(../images/dot.png);
   margin-top: 16px;
   margin-bottom: 16px;
   width: 42px;
   height: 4px;
-  background-image: url('../images/dot.png');
+  display: inline-flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: var(--primary-color);
 }

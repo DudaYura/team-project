@@ -15,6 +15,9 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(9, 1fr);
   grid-gap: 2px;
+  @media screen and (max-width: 479px) {
+    padding-bottom: 80px;
+  }
   @media screen and (min-width: 480px) {
     padding: 0 12px 80px;
     grid-gap: 4px;
