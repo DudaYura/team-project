@@ -1,14 +1,18 @@
 (() => {
-  const refs = {
-    openAboutBtn: document.querySelector('[data-about-modal-open]'),
-    closeAboutBtn: document.querySelector('[data-about-modal-close]'),
-    aboutmodal: document.querySelector('[data-about-modal]'),
+  const openAboutBtn = document.querySelector('[data-about-modal-open]');
+  const closeAboutBtn = document.querySelector('[data-about-modal-close]');
+  const aboutModal = document.querySelector('[data-about-modal]');
+
+  const openAboutModal = () => {
+    aboutModal.classList.remove('is-hidden');
+    bodyScrollLock['disableBodyScroll'](document.body);
   };
 
-  refs.openAboutBtn.addEventListener('click', toggleModal);
-  refs.closeAboutBtn.addEventListener('click', toggleModal);
+  const closeAboutModal = () => {
+    aboutModal.classList.add('is-hidden');
+    bodyScrollLock['enableBodyScroll'](document.body);
+  };
 
-  function toggleModal() {
-    refs.aboutmodal.classList.toggle('is-hidden');
-  }
+  openAboutBtn.addEventListener('click', openAboutModal);
+  closeAboutBtn.addEventListener('click', closeAboutModal);
 })();
