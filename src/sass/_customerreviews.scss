@@ -45,6 +45,9 @@
 .customer__text {
   background-color: #fafafa;
   padding: 43px 50px 26px 50px;
+  @media screen and (min-width: 768px){
+    opacity: 0.4;
+      }
   /*@media screen and (min-width: 320px) {
             width: 280px;
             height: 308px;
@@ -57,6 +60,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 1034px;
+    opacity: 1;
   }
 }
 
@@ -71,7 +75,7 @@
     #e1e1e1 30px
   );
   @media screen and (min-width: 768px) {
-    background-image: repeating-linear-gradient(
+      background-image: repeating-linear-gradient(
       180deg,
       transparent,
       transparent 24px,
@@ -80,7 +84,7 @@
     padding: 0 40px;
   }
   @media screen and (min-width: 1200px) {
-    background-image: repeating-linear-gradient(
+      background-image: repeating-linear-gradient(
       180deg,
       transparent,
       transparent 27px,
@@ -126,13 +130,13 @@
   line-height: 2.5;
   text-align: center;
   color: #000000;
-  max-width: 280px;
+  max-width: 100%;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.9;
     letter-spacing: 0.04em;
-    max-width: 514px;
+    max-width: 100%;
     padding-left: 50px;
   }
 
