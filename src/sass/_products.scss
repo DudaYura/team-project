@@ -115,8 +115,8 @@
     background-image: url('../images/home-pic1.png');
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/home-pic1@2x.png');
     }
 
@@ -127,8 +127,8 @@
       background-image: url('../images/home-1tab.png');
 
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/home-1tab@2x.png');
       }
     }
@@ -140,8 +140,8 @@
       background-image: url('../images/home-1desk.png');
 
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/home-1desk@2x.png');
       }
     }
@@ -158,8 +158,8 @@
     background-image: url('../images/home-pic2.png');
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/home-pic2@2x.png');
     }
 
@@ -170,8 +170,8 @@
       background-image: url('../images/home-2tab.png');
 
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/home-2tab2@2x.png');
       }
     }
@@ -183,8 +183,8 @@
       background-image: url('../images/home-2desk.png');
 
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/home-2desk@2x.png');
       }
     }
@@ -201,8 +201,8 @@
     background-image: url('../images/home-pic3.png');
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/home-pic3@2x.png');
     }
 
@@ -213,8 +213,8 @@
       background-image: url('../images/home-3tab.png');
 
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/home-3tab@2x.png');
       }
     }
@@ -226,8 +226,8 @@
       background-image: url('../images/home-3desk.png');
 
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url('../images/home-3desk@2x.png');
       }
     }
@@ -387,6 +387,6 @@
   color: #907e82;
 
   @media screen and (min-width: 1280px) {
-    font-size: 18px;
+    font-size: 15px;
   }
 }

@@ -67,7 +67,7 @@
   background-image: repeating-linear-gradient(
     180deg,
     transparent,
-    transparent 29px,
+    transparent 28px,
     #e1e1e1 30px
   );
   @media screen and (min-width: 768px) {
@@ -114,45 +114,32 @@
   }
   @media screen and (min-width: 1200px) {
     top: -15px;
-    left: 28px;
+    left: 14px;
   }
 }
 .customer__top-text {
   position: relative;
   z-index: 2;
 
-  @media screen and (max-width: 480px) {
-    font-family: DM Sans, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 30px;
-    text-align: center;
-    color: #000000;
-    max-width: 280px;
-  }
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.5;
+  text-align: center;
+  color: #000000;
+  max-width: 280px;
 
   @media screen and (min-width: 768px) {
-    font-family: DM Sans, sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.9;
-    text-align: center;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
     max-width: 514px;
     padding-left: 50px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-family: DM Sans, sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1.9;
-    text-align: center;
     letter-spacing: 0.04em;
-    max-width: 751px;
+    max-width: 100%;
   }
 }
 
