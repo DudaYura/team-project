@@ -44,29 +44,14 @@
 
 .customer__text {
   background-color: #fafafa;
-  padding: 43px 50px 26px 50px;
-  @media screen and (min-width: 768px){
-    opacity: 0.4;
-      }
-  /*@media screen and (min-width: 320px) {
-            width: 280px;
-            height: 308px;
-        }
-    
-        @media screen and (min-width: 768px) {
-            width: 620px;
-            height: 164px;
-        }*/
-
-  @media screen and (min-width: 1200px) {
+  padding: 43px 40px 26px 50px;
+   @media screen and (min-width: 1280px) {
     width: 1034px;
-    opacity: 1;
-  }
+    }
 }
 
 .customer__text-box {
   background-color: #fafafa;
-  padding: 43px 50px 26px 50px;
   padding: 0 20px;
   background-image: repeating-linear-gradient(
     180deg,
@@ -83,14 +68,14 @@
     );
     padding: 0 40px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
       background-image: repeating-linear-gradient(
       180deg,
       transparent,
       transparent 27px,
       #e1e1e1 29px
     );
-    padding: 0px 20px;
+    padding: 0px 80px;
   }
 }
 .customer_city-text {
@@ -104,7 +89,7 @@
   content: '';
   position: absolute;
   top: -14px;
-  left: -21px;
+  left: -15px;
   z-index: -1;
   display: inline-block;
   background-size: contain;
@@ -113,12 +98,12 @@
   height: 40px;
   background-image: url(../images/lap.png);
   @media screen and (min-width: 768px) {
-    top: -20px;
-    left: 32px;
+    top: -19px;
+    left: 4px;
   }
-  @media screen and (min-width: 1200px) {
-    top: -15px;
-    left: 14px;
+  @media screen and (min-width: 1280px) {
+    top: -14px;
+    left: 2px;
   }
 }
 .customer__top-text {
@@ -137,14 +122,14 @@
     line-height: 1.9;
     letter-spacing: 0.04em;
     max-width: 100%;
-    padding-left: 50px;
+    padding-left: 40px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     letter-spacing: 0.04em;
     max-width: 100%;
-  }
+    }
 }
 
 .customer_city {
@@ -162,7 +147,7 @@
     color: #000000;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
     font-family: DM Sans, sans-serif;
     font-style: normal;
@@ -185,4 +170,5 @@
   background-size: contain;
   background-repeat: no-repeat;
   color: var(--primary-color);
+  transform: translateX(5px);
 }
